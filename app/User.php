@@ -29,6 +29,6 @@ class User extends Authenticatable
 
     public function isAdmin()
     {
-        return $this->role; // this looks for an role column in your users table
+        return $this->role;
     }
 }

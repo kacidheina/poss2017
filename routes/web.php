@@ -24,8 +24,6 @@ Route::group(['middleware' => 'auth'], function () {
 
     });
 
-    Route::get('/home', 'HomeController@index')->name('home');
-
     /***********************************USERS = EMPLOYEES ROUTES**********************************/
 
     Route::get('/users_list', 'UsersController@index')->name('users');
