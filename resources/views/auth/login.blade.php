@@ -13,11 +13,11 @@
             </div>
             <div class="form-group">
                 <!--ie8, ie9 does not support html5 placeholder, so we just show field title for that-->
-                <label class="control-label visible-ie8 visible-ie9">Username</label>
+                <label class="control-label visible-ie8 visible-ie9">Email</label>
                 <div class="input-icon">
                     <i class="fa fa-user"></i>
-                    <input class="form-control placeholder-no-fix {{ $errors->has('username') ? ' has-error' : '' }}" type="username" autocomplete="off" id="username" name="username" required autofocus /> </div>
-                @if ($errors->has('username'))<span class="help-block"><strong>{{ $errors->first('username') }}</strong></span>@endif
+                    <input class="form-control placeholder-no-fix {{ $errors->has('email') ? ' has-error' : '' }}" type="email" autocomplete="off" id="email" name="email" required autofocus /> </div>
+                @if ($errors->has('email'))<span class="help-block"><strong>{{ $errors->first('email') }}</strong></span>@endif
             </div>
             <div class="form-group">
                 <label class="control-label visible-ie8 visible-ie9">Password</label>
@@ -45,7 +45,8 @@
             <div class="form-group">
                 <div class="input-icon">
                     <i class="fa fa-envelope"></i>
-                    <input class="form-control placeholder-no-fix" type="text" autocomplete="off" placeholder="Email" name="email" /> </div>
+                    <input class="form-control placeholder-no-fix" type="text" autocomplete="off" placeholder="Email" name="email" />
+                </div>
             </div>
             <div class="form-actions">
                 <button type="button" id="back-btn" class="btn grey-salsa btn-outline"> Back </button>

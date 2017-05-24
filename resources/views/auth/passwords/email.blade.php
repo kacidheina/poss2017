@@ -13,11 +13,12 @@
         <div class="form-group" {{ $errors->has('email') ? ' has-error' : '' }}>
             <div class="input-icon">
                 <i class="fa fa-envelope"></i>
-                <input class="form-control placeholder-no-fix" id="email" type="email" name="email" value="{{ old('email') }}" placeholder="email" required />
+                <input class="form-control placeholder-no-fix" id="email" type="email" name="email" value="{{ old('email') }}" placeholder="Email" required />
                 @if ($errors->has('email'))<span class="help-block"><strong>{{ $errors->first('email') }}</strong></span>@endif
             </div>
         </div>
         <div class="form-actions">
+            <button type="button" id="back-btn" class="btn grey-salsa btn-outline"> Back </button>
             <button type="submit" class="btn green pull-right"> Submit </button>
         </div>
     </form>
