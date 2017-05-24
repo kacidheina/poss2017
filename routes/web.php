@@ -18,6 +18,12 @@ Auth::routes();
 
 Route::group(['middleware' => 'auth'], function () {
 
+    Route::group(['middleware' => 'checkRole'], function (){
+
+        Route::get('/home', 'HomeController@index')->name('home');
+
+    });
+
     Route::get('/home', 'HomeController@index')->name('home');
 
     /***********************************USERS = EMPLOYEES ROUTES**********************************/
